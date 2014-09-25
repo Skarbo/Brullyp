@@ -3,6 +3,8 @@
 module.exports = function ( grunt ) {
 
     grunt.initConfig( {
+        remoteUserIp: 'root@176.58.112.243',
+        remoteDest: '/root/public/krisskarbo.com/public/krisogmalin/',
         pkg: grunt.file.readJSON( 'package.json' ),
 
         compass: {
@@ -55,13 +57,19 @@ module.exports = function ( grunt ) {
                     sourcemap: 'auto'
                 }
             }
+        },
+
+        exec: {
+            remoteGitPull: "ssh <%= remoteUserIp %> 'cd <%= remoteDest %>; git pull;'"
         }
     } );
 
     grunt.loadNpmTasks( 'grunt-contrib-compass' );
     grunt.loadNpmTasks( 'grunt-contrib-sass' );
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
+    grunt.loadNpmTasks( 'grunt-exec' );
 
     grunt.registerTask( 'compass-production', ['compass:clean', 'compass:development', 'compass:production'] );
     grunt.registerTask( 'compass-watch', ['compass:clean', 'compass:watch'] );
+    grunt.registerTask( 'remote-git-pull', ['exec:remoteGitPull'] );
 };
