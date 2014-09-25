@@ -1,0 +1,111 @@
+/* line 6, ../../scss/svg.scss */
+svg #Kris-og-Malin #Ballong #Hjerte {
+  fill: lightcoral;
+}
+/* line 11, ../../scss/svg.scss */
+svg #plane #blade {
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50% 0px;
+  -moz-animation: blade-rotate 750ms linear infinite;
+  -webkit-animation: blade-rotate 750ms linear infinite;
+  animation: blade-rotate 750ms linear infinite;
+}
+/* line 18, ../../scss/svg.scss */
+svg #plane #wing_upper #wing {
+  fill: lightcoral;
+}
+/* line 24, ../../scss/svg.scss */
+svg #bird #wings {
+  -moz-animation: wing-flap 250ms linear infinite;
+  -webkit-animation: wing-flap 250ms linear infinite;
+  animation: wing-flap 250ms linear infinite;
+}
+
+@-moz-keyframes blade-rotate {
+  0% {
+    -moz-transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+    transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+  }
+  100% {
+    -moz-transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+    transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+  }
+}
+@-webkit-keyframes blade-rotate {
+  0% {
+    -webkit-transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+    transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+    transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+  }
+}
+@keyframes blade-rotate {
+  0% {
+    -moz-transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+    -ms-transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+    -webkit-transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+    transform: skew(-10deg, -10deg) translate(0, 0) rotate(0deg);
+  }
+  100% {
+    -moz-transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+    -ms-transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+    -webkit-transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+    transform: skew(-10deg, -10deg) translate(0, 0) rotate(359deg);
+  }
+}
+@-moz-keyframes wing-flap {
+  0% {
+    -moz-transform: rotate(0deg) translate(200%, 70%);
+    transform: rotate(0deg) translate(200%, 70%);
+  }
+  50% {
+    -moz-transform: rotate(5deg) translate(200%, 70%);
+    transform: rotate(5deg) translate(200%, 70%);
+  }
+  100% {
+    -moz-transform: rotate(0deg) translate(200%, 70%);
+    transform: rotate(0deg) translate(200%, 70%);
+  }
+}
+@-webkit-keyframes wing-flap {
+  0% {
+    -webkit-transform: rotate(0deg) translate(200%, 70%);
+    transform: rotate(0deg) translate(200%, 70%);
+  }
+  50% {
+    -webkit-transform: rotate(5deg) translate(200%, 70%);
+    transform: rotate(5deg) translate(200%, 70%);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(200%, 70%);
+    transform: rotate(0deg) translate(200%, 70%);
+  }
+}
+@keyframes wing-flap {
+  0% {
+    -moz-transform: rotate(0deg) translate(200%, 70%);
+    -ms-transform: rotate(0deg) translate(200%, 70%);
+    -webkit-transform: rotate(0deg) translate(200%, 70%);
+    transform: rotate(0deg) translate(200%, 70%);
+  }
+  50% {
+    -moz-transform: rotate(5deg) translate(200%, 70%);
+    -ms-transform: rotate(5deg) translate(200%, 70%);
+    -webkit-transform: rotate(5deg) translate(200%, 70%);
+    transform: rotate(5deg) translate(200%, 70%);
+  }
+  100% {
+    -moz-transform: rotate(0deg) translate(200%, 70%);
+    -ms-transform: rotate(0deg) translate(200%, 70%);
+    -webkit-transform: rotate(0deg) translate(200%, 70%);
+    transform: rotate(0deg) translate(200%, 70%);
+  }
+}
+
+/*# sourceMappingURL=svg.css.map */

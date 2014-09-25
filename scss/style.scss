@@ -1,0 +1,393 @@
+$color-primary: lightcoral;
+$breakpoint-small: 320px;
+$breakpoint-medium: 800px;
+$padding: 10px;
+$width-malinandkris: 486px;
+
+@font-face {
+    font-family: Diplomata;
+    src: url('../font/Diplomata/Diplomata-Regular.ttf');
+}
+
+@font-face {
+    font-family: Satisfy;
+    src: url('../font/Satisfy/Satisfy-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url('../font/Lobster/Lobster.ttf');
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url('../font/Pacifico/Pacifico.ttf');
+}
+
+@import "compass/reset";
+@import "compass/css3";
+//@import url(http://fonts.googleapis.com/css?family=Pacifico|Satisfy|Lobster|Diplomata);
+// font-family: 'Pacifico', cursive;
+// font-family: 'Satisfy', cursive;
+//font-family: 'Lobster', cursive;
+
+body {
+    background-color: lightblue;
+}
+
+* {
+    //    -webkit-touch-callout: none;
+    //    -webkit-user-select: none;
+    //    -khtml-user-select: none;
+    //    -moz-user-select: none;
+    //    -ms-user-select: none;
+    //    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @include box-sizing(border-box);
+}
+
+app {
+    display: block;
+    min-width: $breakpoint-small;
+    position: relative;
+}
+
+loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: lightblue;
+    opacity: 1;
+    z-index: 100;
+    @include transition(opacity 150ms ease-out);
+
+    &.hide {
+        opacity: 0;
+    }
+}
+
+foreground {
+    display: block;
+    padding: $padding;
+    max-width: $breakpoint-medium;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+}
+
+wrapper[malinandkris][savethedate] {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+malinandkris {
+    width: 100%;
+    display: block;
+    font-family: 'Pacifico', cursive;
+    @include animation(krisandmalin-wind 15s ease-in-out infinite);
+    @include animation-delay(1s);
+
+    @media screen and (min-width: $breakpoint-medium) {
+
+    }
+
+    h1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 100px;
+        @include transform(rotate(3deg) translate(22%, 23px));
+        color: #ffffff;
+
+        @media screen and (min-width: $breakpoint-small) {
+            font-size: 31vw;
+        }
+
+        @media screen and (min-width: $width-malinandkris+$padding) {
+            font-size: 154px;
+        }
+
+        //        @media screen and (max-width: $breakpoint-medium+1) {
+        //            font-size: 150px;
+        //        }
+
+        text {
+            display: block;
+        }
+        text[malin] {
+            font-size: 100%;
+        }
+        text[og] {
+            font-size: 50%;
+            line-height: 0em;
+            text-align: center;
+            opacity: 0.7;
+        }
+        text[kris] {
+            font-size: 100%;
+            margin-top: 0.04em;
+        }
+    }
+
+    object {
+        width: 100%;
+        height: 100%;
+        max-width: 486px;
+    }
+}
+
+savethedate {
+    position: absolute;
+    @include animation(savethedate-wind 10s ease-in-out infinite);
+    @include animation-delay(3s);
+    bottom: 0;
+    right: 0;
+
+    @media screen and (min-width: $breakpoint-small+100px) {
+        bottom: 90px;
+    }
+
+    @media screen and (min-width: $width-malinandkris+$padding) {
+        right: auto;
+        left: 320px;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+        left: auto;
+        right: 0;
+        bottom: auto;
+        top: 30px;
+    }
+
+    bird {
+        display: block;
+        margin-bottom: -7px;
+        padding-left: 60px;
+
+        object {
+            width: 50px;
+            height: 59px;
+        }
+    }
+
+    h2 {
+        font-family: 'Diplomata', cursive;
+        text-align: center;
+        display: inline-block;
+        background-color: white;
+        padding: 10px;
+        @include box-shadow(3px 3px 3px rgba(0, 0, 0, 0.1));
+        @include transform(rotate(4deg));
+        font-size: 24px;
+
+        text {
+            display: block;
+
+        }
+        text[save] {
+            text-transform: uppercase;
+            border-bottom: 1px solid black;
+            padding-bottom: 4px;
+        }
+        text[the] {
+            font-size: 50%;
+            font-family: sans-serif;
+            margin-top: -7px;
+
+            span {
+                background-color: #ffffff;
+                padding: 0 5px;
+            }
+        }
+        text[date] {
+            text-transform: uppercase;
+        }
+    }
+}
+
+header {
+    display: block;
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    padding-right: 10px;
+    max-width: 680px;
+    @include text-shadow(1px 1px 0 black);
+
+    @media screen and (min-width: $breakpoint-small) {
+        font-size: 16vw;
+    }
+
+    @media screen and (min-width: $width-malinandkris+$padding) {
+        font-size: 79px;
+
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+        margin-top: -290px;
+        @include align-self(flex-end);
+        text-align: right;
+    }
+
+    > * {
+        font-style: italic;
+        display: block;
+    }
+
+    time {
+        display: block;
+        margin-left: 40px;
+    }
+
+    location {
+        display: block;
+
+        text {
+            display: block;
+            white-space: nowrap;
+        }
+    }
+}
+
+plane {
+    $wrapper: 390px;
+    width: 100%;
+    display: block;
+    margin-top: 60px;
+    @include order(1 1 auto);
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        text-align: right;
+        padding-right: 120px;
+    }
+
+    object {
+        width: 100%;
+        max-width: $wrapper;
+        cursor: pointer;
+        @include animation(plane-wind 20s ease-in-out);
+    }
+}
+
+$cloud-width: 326px;
+clouds {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    cloud {
+        position: absolute;
+        left: -$cloud-width;
+
+        object {
+            width: 100%;
+            min-width: $cloud-width;
+        }
+
+        &:nth-child(1) {
+            opacity: 0.5;
+            top: 10%;
+            @include animation(cloud 20s ease-in-out infinite);
+        }
+
+        &:nth-child(5) {
+            opacity: 0.3;
+            top: 12%;
+            @include animation(cloud 20s ease-in-out infinite);
+            @include animation-delay(10s);
+            @include transform(scale(1, 0.8));
+        }
+
+        &:nth-child(2) {
+            opacity: 0.5;
+            top: 45%;
+            @include animation(cloud 30s ease-in-out infinite);
+            @include transform(scale(0.7, 0.8));
+        }
+
+        &:nth-child(6) {
+            opacity: 0.5;
+            top: 45%;
+            @include animation(cloud 20s ease-in-out infinite);
+            @include animation-delay(12s);
+            @include transform(scale(0.8, 1));
+        }
+
+        &:nth-child(3) {
+            opacity: 0.5;
+            bottom: 10%;
+            @include animation(cloud 25s ease-in-out infinite);
+            @include transform(scale(0.9, 0.7));
+            @include animation-delay(2s);
+        }
+
+        &:nth-child(4) {
+            opacity: 0.3;
+            bottom: 5%;
+            @include animation(cloud 25s ease-in-out infinite);
+            @include animation-delay(6s);
+            @include transform(scale(0.8, 0.8));
+        }
+    }
+
+}
+
+@include keyframes(cloud) {
+    0% {
+        left: -100%;
+        @include transform(translateY(0));
+    }
+    10%, 30%, 50%, 70%, 90% {
+        @include transform(translateY(-10px));
+    }
+    20%, 40%, 60%, 80% {
+        @include transform(translateY(10px));
+    }
+    100% {
+        left: 200%;
+        @include transform(translateY(0));
+    }
+}
+
+@include keyframes(plane-wind) {
+    0%, 100% {
+        @include transform(rotate(0deg));
+    }
+    25% {
+        @include transform(rotate(-4deg));
+    }
+    75% {
+        @include transform(rotate(4deg));
+    }
+}
+
+@include keyframes(krisandmalin-wind) {
+    0%, 100% {
+        @include transform(translate(0, 0) scale(1, 1));
+    }
+    25% {
+        @include transform(translate(10px, -10px) scale(0.9, 0.9));
+    }
+    75% {
+        @include transform(translate(-10px, 10px) scale(0.9, 0.9));
+    }
+}
+
+@include keyframes(savethedate-wind) {
+    0%, 75%, 100% {
+        @include transform(translate(0, 0));
+    }
+    25% {
+        @include transform(translate(-5px, 20px));
+    }
+}

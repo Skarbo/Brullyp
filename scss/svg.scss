@@ -1,0 +1,58 @@
+$color-primary: lightcoral;
+
+@import "compass/css3";
+
+svg {
+    #Kris-og-Malin #Ballong #Hjerte {
+        fill: $color-primary;
+    }
+
+    #plane {
+        #blade {
+            @include transform-origin(50%, 50%);
+            transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50% 0px;
+            @include animation(blade-rotate 750ms linear infinite);
+        }
+
+        #wing_upper #wing {
+            fill: $color-primary;
+        }
+    }
+
+    #bird {
+        #wings {
+            //@include transform-origin(100%, 50%);
+            @include animation(wing-flap 250ms linear infinite);
+
+            #wing_top {
+            }
+            #wing_bottom {
+            }
+        }
+    }
+
+}
+
+@include keyframes(blade-rotate) {
+    0% {
+        //@include transform-origin(50%, 50%);
+        @include transform(skew(-10deg, -10deg) translate(0, 0) rotate(0deg));
+    }
+    100% {
+        //@include transform-origin(50%, 50%);
+        @include transform(skew(-10deg, -10deg) translate(0, 0) rotate(359deg));
+    }
+}
+
+@include keyframes(wing-flap) {
+    0% {
+        @include transform(rotate(0deg) translate(200%, 70%));
+    }
+    50% {
+        @include transform(rotate(5deg) translate(200%, 70%));
+    }
+    100% {
+        @include transform(rotate(0deg) translate(200%, 70%));
+    }
+}
