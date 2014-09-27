@@ -1,25 +1,32 @@
-/* line 6, ../../scss/svg.scss */
-svg #Kris-og-Malin #Ballong #Hjerte {
+/* line 5, ../../scss/svg.scss */
+#Kris-og-Malin #Ballong #Hjerte {
   fill: lightcoral;
 }
-/* line 11, ../../scss/svg.scss */
-svg #plane #blade {
+
+/* line 10, ../../scss/svg.scss */
+#plane #blade {
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50% 0px;
+  -moz-transform: skew(-10deg, -10deg) translate(10px, 11px);
+  -ms-transform: skew(-10deg, -10deg) translate(10px, 11px);
+  -webkit-transform: skew(-10deg, -10deg) translate(10px, 11px);
+  transform: skew(-10deg, -10deg) translate(10px, 11px);
+}
+/* line 14, ../../scss/svg.scss */
+svg:not(.no-rotate) #plane #blade {
   -moz-animation: blade-rotate 750ms linear infinite;
   -webkit-animation: blade-rotate 750ms linear infinite;
   animation: blade-rotate 750ms linear infinite;
 }
-/* line 18, ../../scss/svg.scss */
-svg #plane #wing_upper #wing {
+/* line 19, ../../scss/svg.scss */
+#plane #wing_upper #wing {
   fill: lightcoral;
 }
-/* line 24, ../../scss/svg.scss */
-svg #bird #wings {
+
+/* line 27, ../../scss/svg.scss */
+svg:not(.no-rotate) #bird #wings {
   -moz-animation: wing-flap 250ms linear infinite;
   -webkit-animation: wing-flap 250ms linear infinite;
   animation: wing-flap 250ms linear infinite;
