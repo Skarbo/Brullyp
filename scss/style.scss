@@ -291,7 +291,7 @@ plane {
 
 newpage {
     display: block;
-    height: 100%;
+    height: 20%;
     width: 100%;
 
     img {
@@ -333,12 +333,12 @@ wrapper[info] {
             text-align: center;
 
             table {
+                display: inline-table;
                 margin: 0 10px;
             }
         }
 
         table {
-            display: inline-table;
             text-align: left;
 
             td {
@@ -395,6 +395,27 @@ wrapper[info] {
             }
         }
     }
+
+    wrapper[contact] {
+        h3 {
+            font-size: 18px;
+            font-family: 'Lobster', cursive;
+            font-weight: bold;
+        }
+
+        div {
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        @media screen and (min-width: $breakpoint-medium) {
+            text-align: center;
+
+            div {
+                margin: 10px 30px 0px 30px;
+            }
+        }
+    }
 }
 
 wrapper[profile] {
@@ -412,6 +433,7 @@ wrapper[profile] {
     }
 
     h2 {
+        font-size: 38px;
         margin: 20px 0;
         font-family: 'Lobster', cursive;
         color: #ffffff;
