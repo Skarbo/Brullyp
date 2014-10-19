@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Malin & Kris</title>
+    <title>Malin og Kris gifter seg!</title>
     <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/main.js"></script>
     <script>
@@ -21,6 +21,62 @@
 
         ga( 'create', 'UA-16538668-6', 'auto' );
         ga( 'send', 'pageview' );
+    </script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC3GJu72l2jLO9DBfYKTdoOy-E-cIaF5Y">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+            var bounds = new google.maps.LatLngBounds(),
+                    latLngChurch = new google.maps.LatLng( 62.466105, 6.233798 ),
+                    latLngPreParty = new google.maps.LatLng( 62.468883, 6.257174 ),
+                    latLngParty = new google.maps.LatLng( 62.4518388, 6.2035824 ),
+                    latLngCake = new google.maps.LatLng( 62.4629511, 6.2883264 );
+
+            var mapOptions = {
+                zoom: 16,
+                center: latLngChurch,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                disableDefaultUI: true,
+                zoomControl: true
+            };
+
+            var map = new google.maps.Map( document.querySelector( "map" ), mapOptions );
+
+            var markerChurch = new google.maps.Marker( {
+                        position: latLngChurch,
+                        map: map,
+                        title: "Hello World!",
+                        icon: "img/marker-wedding.png"
+                    } ),
+                    markerPreParty = new google.maps.Marker( {
+                        position: latLngPreParty,
+                        map: map,
+                        title: "Hello World!",
+                        icon: "img/marker-preparty.png"
+                    } ),
+                    markerParty = new google.maps.Marker( {
+                        position: latLngParty,
+                        map: map,
+                        title: "Hello World!",
+                        icon: "img/marker-party.png"
+                    } ),
+                    markerCake = new google.maps.Marker( {
+                        position: latLngCake,
+                        map: map,
+                        title: "Hello World!",
+                        icon: "img/marker-cake.png"
+                    } );
+
+            bounds.extend( latLngChurch );
+            bounds.extend( latLngPreParty );
+            bounds.extend( latLngParty );
+            bounds.extend( latLngCake );
+
+            map.fitBounds( bounds );
+        }
+
+        google.maps.event.addDomListener( window, 'load', initialize );
     </script>
 </head>
 
@@ -66,9 +122,118 @@
         <plane>
             <object type="image/svg+xml" data="svg/plane.svg"></object>
         </plane>
+
+        <newpage>
+            <img src="img/1x1.png"/>
+        </newpage>
+
+        <wrapper info>
+            <h2>Velkommen</h2>
+
+            <wrapper map>
+                <map></map>
+            </wrapper>
+
+            <wrapper plans>
+                <table>
+                    <tr class="schedule">
+                        <td colspan="2">Fredag, 3. Juli</td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-preparty.png"/>
+                        </td>
+                        <td>
+                            <h3>Bli kjent-samling</h3>
+
+                            <time datetime="2015-07-03 19:00">19:00</time>
+                            <a href="https://www.google.no/maps/place/62%C2%B028'08.0%22N+6%C2%B015'25.8%22E/@62.468883,6.257174,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0"
+                               target="_blank">Gåseidvika havn</a>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class="schedule">
+                        <td colspan="2">Lørdag, 4. Juli</td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-wedding.png"/>
+                        </td>
+                        <td>
+                            <h3>Brullyp</h3>
+
+                            <time datetime="2015-07-04 14:00">14:00</time>
+                            <a href="https://www.google.no/maps/place/borgund+church+alesund/@62.466105,6.233798,15z/data=!4m2!3m1!1s0x0:0xd553b806a27030b7?sa=X&ei=VrRDVLj8HKeCzAOox4BQ&ved=0CIgBEPwSMA0"
+                               target="_blank">Borgund kirke</a>
+                        </td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-party.png"/>
+                        </td>
+                        <td>
+                            <h3>Fest</h3>
+
+                            <time datetime="2015-07-04 16:00">16:00</time>
+                            <div>Seilerhytta</div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class="schedule">
+                        <td colspan="2">Søndag, 5. Juli</td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-cake.png"/>
+                        </td>
+                        <td>
+                            <h3>Restekaker</h3>
+
+                            <time datetime="2015-07-05 14:00">14:00</time>
+                            <a href="https://www.google.no/maps/place/R%C3%B8rstadvegen+67,+6016+%C3%85lesund/@62.4629511,6.2883264,17z/data=!3m1!4b1!4m2!3m1!1s0x4616c53aa0460801:0xb62445c6e73aa255"
+                               target="_blank">Casa del Finsæther</a>
+                        </td>
+                    </tr>
+                </table>
+            </wrapper>
+
+            <h2>Overnatting</h2>
+
+            <wrapper overnatting>
+                Her vil vi etter hvert komme med noen tilbud og forslag til dere reisende som trenger et sted å bo.
+            </wrapper>
+        </wrapper>
+
+        <wrapper profile>
+            <img src="img/kris-og-malin.png"/>
+            <h2>
+                <div>Med vennlig hilsen</div>
+                <div>Malin og Kristoffer</div>
+            </h2>
+        </wrapper>
     </foreground>
 
     <clouds>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
         <cloud>
             <object type="image/svg+xml" data="svg/cloud.svg"></object>
         </cloud>

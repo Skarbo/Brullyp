@@ -24,6 +24,11 @@ $width-malinandkris: 486px;
     src: url('../font/Pacifico/Pacifico.ttf');
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url('../font/Roboto/Roboto.ttf');
+}
+
 @import "compass/reset";
 @import "compass/css3";
 //@import url(http://fonts.googleapis.com/css?family=Pacifico|Satisfy|Lobster|Diplomata);
@@ -33,6 +38,9 @@ $width-malinandkris: 486px;
 
 body {
     background-color: lightblue;
+    font-family: 'Roboto', Helvetica, Arial;
+    color: #333;
+    font-size: 16px;
 }
 
 * {
@@ -44,6 +52,12 @@ body {
     //    user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     @include box-sizing(border-box);
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 1px solid #CCC;
 }
 
 app {
@@ -143,7 +157,7 @@ savethedate {
     position: absolute;
     @include animation(savethedate-wind 10s ease-in-out infinite);
     @include animation-delay(3s);
-    bottom: 0;
+    bottom: 30px;
     right: 0;
 
     @media screen and (min-width: $breakpoint-small+100px) {
@@ -179,7 +193,7 @@ savethedate {
         display: inline-block;
         background-color: white;
         padding: 10px;
-        @include box-shadow(3px 3px 3px rgba(0, 0, 0, 0.1));
+        @include box-shadow(1px 1px 0 0 black);
         @include transform(rotate(4deg));
         font-size: 24px;
 
@@ -275,6 +289,143 @@ plane {
     }
 }
 
+newpage {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    img {
+        height: 20%;
+        width: 100%;
+    }
+}
+
+wrapper[info] {
+    display: block;
+
+    h2 {
+        font-family: 'Lobster', cursive;
+        color: #ffffff;
+        font-size: 38px;
+        @include text-shadow(1px 1px 0 black);
+        margin-top: 20px;
+    }
+
+    wrapper {
+        display: block;
+        padding: 10px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        line-height: 1.3;
+        @include box-shadow(1px 1px 0 0 black);
+    }
+
+    wrapper[map] {
+        map {
+            display: block;
+            width: 100%;
+            height: 350px;
+        }
+    }
+
+    wrapper[plans] {
+        @media screen and (min-width: $breakpoint-medium) {
+            text-align: center;
+
+            table {
+                margin: 0 10px;
+            }
+        }
+
+        table {
+            display: inline-table;
+            text-align: left;
+
+            td {
+                vertical-align: middle;
+                padding-bottom: 10px;
+            }
+
+            tr.schedule {
+                td {
+                    font-size: 16px;
+                    font-family: 'Lobster', cursive;
+                }
+            }
+
+            tr.plan {
+                td {
+                    &:first-child {
+                        height: 20px;
+                        width: 35px;
+                    }
+
+                    h3 {
+                        display: block;
+                        line-height: 1.3;
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+
+                    time {
+                        display: inline-block;
+                        line-height: 1.3;
+                        font-size: 14px;
+
+                        &:after {
+                            content: ",";
+                        }
+                    }
+
+                    div, a {
+                        display: inline-block;
+                        line-height: 1.3;
+                    }
+
+                    div {
+                        border-bottom: 1px solid transparent;
+                    }
+
+                    img {
+                        position: absolute;
+                        clip: rect(14px, 26px, 35px, 0px);
+                        margin-top: -25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+wrapper[profile] {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+
+    img {
+        background-color: white;
+        padding: 10px;
+        border-radius: 50%;
+        @include box-shadow(1px 1px 0 0 black);
+        max-width: 100%;
+    }
+
+    h2 {
+        margin: 20px 0;
+        font-family: 'Lobster', cursive;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 black;
+
+        div:first-child {
+            font-size: 28px;
+        }
+        div:last-child {
+            font-size: 38px;
+        }
+    }
+}
+
 $cloud-width: 326px;
 clouds {
     z-index: 1;
@@ -294,49 +445,15 @@ clouds {
             min-width: $cloud-width;
         }
 
-        &:nth-child(1) {
-            opacity: 0.5;
-            top: 10%;
-            @include animation(cloud 20s ease-in-out infinite);
-        }
-
-        &:nth-child(5) {
-            opacity: 0.3;
-            top: 12%;
-            @include animation(cloud 20s ease-in-out infinite);
-            @include animation-delay(10s);
-            @include transform(scale(1, 0.8));
-        }
-
-        &:nth-child(2) {
-            opacity: 0.5;
-            top: 45%;
-            @include animation(cloud 30s ease-in-out infinite);
-            @include transform(scale(0.7, 0.8));
-        }
-
-        &:nth-child(6) {
-            opacity: 0.5;
-            top: 45%;
-            @include animation(cloud 20s ease-in-out infinite);
-            @include animation-delay(12s);
-            @include transform(scale(0.8, 1));
-        }
-
-        &:nth-child(3) {
-            opacity: 0.5;
-            bottom: 10%;
-            @include animation(cloud 25s ease-in-out infinite);
-            @include transform(scale(0.9, 0.7));
-            @include animation-delay(2s);
-        }
-
-        &:nth-child(4) {
-            opacity: 0.3;
-            bottom: 5%;
-            @include animation(cloud 25s ease-in-out infinite);
-            @include animation-delay(6s);
-            @include transform(scale(0.8, 0.8));
+        $cloud-count: 12;
+        @for $i from 1 through $cloud-count {
+            &:nth-child(#{$i}) {
+                opacity: 0.5-(0.3*($i/$cloud-count));
+                top: round(($i/$cloud-count)*90%);
+                @include animation(cloud 40+(($i%4)*2s) ease-in-out infinite);
+                @include animation-delay(($i%3)*3s);
+                @include transform(scale((1.0-(0.3*($i/$cloud-count))), (1.0-(0.2*($i/$cloud-count)))));
+            }
         }
     }
 
