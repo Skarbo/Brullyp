@@ -481,6 +481,65 @@ clouds {
 
 }
 
+.infowindow {
+    .title {
+        font-size: 14px;
+        line-height: 1.3;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        display: block;
+        line-height: 1.3;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+wrapper[overnatting] {
+    td {
+        vertical-align: top;
+    }
+    p, td {
+        line-height: 1.3;
+    }
+    td + td {
+        padding-left: 8px;
+    }
+    table {
+        margin: 10px 0;
+    }
+    strong {
+        font-weight: bold;
+    }
+    p.light {
+        margin-top: 5px;
+        color: #999;
+        font-size: 80%;
+    }
+    span {
+        margin-top: 10px;
+        display: block;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+        text-align: center;
+
+        span {
+            display: inline-block;
+            margin: 10px 30px 10px 30px;
+        }
+
+        table {
+            margin: 10px auto;
+        }
+    }
+}
+
 @include keyframes(cloud) {
     0% {
         left: -100%;
