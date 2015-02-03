@@ -132,218 +132,233 @@
 <body>
 
 <app>
-<loader></loader>
+    <loader></loader>
 
-<foreground>
-    <wrapper malinandkris savethedate>
-        <malinandkris>
-            <h1>
-                <text malin>Malin</text>
-                <text og>og</text>
-                <text kris>Kris</text>
-            </h1>
-            <object type="image/svg+xml" data="svg/malinogkris.svg"></object>
+    <foreground>
+        <wrapper malinandkris savethedate>
+            <malinandkris>
+                <h1>
+                    <text malin>Malin</text>
+                    <text og>og</text>
+                    <text kris>Kris</text>
+                </h1>
+                <object type="image/svg+xml" data="svg/malinogkris.svg"></object>
 
-        </malinandkris>
-        <savethedate>
-            <bird>
-                <object type="image/svg+xml" data="svg/bird.svg"></object>
-            </bird>
-            <h2>
-                <text save>Save</text>
-                <text the><span>the</span></text>
-                <text date>date</text>
-            </h2>
-        </savethedate>
-    </wrapper>
-
-    <header>
-        <time datetime="2015-07-04">4. Juli 2015</time>
-        <location>
-            <text>Borgund kirke,</text>
-            <text>Ålesund</text>
-        </location>
-    </header>
-
-    <plane>
-        <object type="image/svg+xml" data="svg/plane.svg"></object>
-    </plane>
-
-    <newpage>
-        <img src="img/1x1.png"/>
-    </newpage>
-
-    <wrapper info>
-
-        <h2>Velkommen</h2>
-
-        <wrapper map>
-            <map></map>
+            </malinandkris>
+            <savethedate>
+                <bird>
+                    <object type="image/svg+xml" data="svg/bird.svg"></object>
+                </bird>
+                <h2>
+                    <text save>Save</text>
+                    <text the><span>the</span></text>
+                    <text date>date</text>
+                </h2>
+            </savethedate>
         </wrapper>
 
-        <a name="schedule"></a>
-        <wrapper plans>
-            <table>
-                <tr class="schedule">
-                    <td colspan="2">Fredag, 3. Juli</td>
-                </tr>
-                <tr class="plan">
-                    <td>
-                        <img src="img/icon-preparty.png"/>
-                    </td>
-                    <td>
-                        <h3>Bli kjent-samling</h3>
+        <header>
+            <time datetime="2015-07-04">4. Juli 2015</time>
+            <location>
+                <text>Borgund kirke,</text>
+                <text>Ålesund</text>
+            </location>
+        </header>
 
-                        <time datetime="2015-07-03 19:00">19:00</time>
-                        <a href="https://www.google.no/maps/place/62%C2%B028'08.0%22N+6%C2%B015'25.8%22E/@62.468883,6.257174,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0"
-                           target="_blank">Gåseidvika havn</a>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr class="schedule">
-                    <td colspan="2">Lørdag, 4. Juli</td>
-                </tr>
-                <tr class="plan">
-                    <td>
-                        <img src="img/icon-wedding.png"/>
-                    </td>
-                    <td>
-                        <h3>Bryllup</h3>
+        <plane>
+            <object type="image/svg+xml" data="svg/plane.svg"></object>
+        </plane>
 
-                        <time datetime="2015-07-04 14:00">14:00</time>
-                        <a href="https://www.google.no/maps/place/borgund+church+alesund/@62.466105,6.233798,15z/data=!4m2!3m1!1s0x0:0xd553b806a27030b7?sa=X&ei=VrRDVLj8HKeCzAOox4BQ&ved=0CIgBEPwSMA0"
-                           target="_blank">Borgund kirke</a>
-                    </td>
-                </tr>
-                <tr class="plan">
-                    <td>
-                        <img src="img/icon-party.png"/>
-                    </td>
-                    <td>
-                        <h3>Fest</h3>
+        <newpage>
+            <img src="img/1x1.png"/>
+        </newpage>
 
-                        <time datetime="2015-07-04 16:00">16:00</time>
-                        <div>Seilerhytta</div>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr class="schedule">
-                    <td colspan="2">Søndag, 5. Juli</td>
-                </tr>
-                <tr class="plan">
-                    <td>
-                        <img src="img/icon-cake.png"/>
-                    </td>
-                    <td>
-                        <h3>Restekaker</h3>
+        <wrapper info>
 
-                        <time datetime="2015-07-05 14:00">14:00</time>
-                        <a href="https://www.google.no/maps/place/R%C3%B8rstadvegen+67,+6016+%C3%85lesund/@62.4629511,6.2883264,17z/data=!3m1!4b1!4m2!3m1!1s0x4616c53aa0460801:0xb62445c6e73aa255"
-                           target="_blank">Casa del Finsæther</a>
-                    </td>
-                </tr>
-            </table>
-        </wrapper>
+            <h2>Velkommen</h2>
 
-        <a name="hotel"></a>
+            <wrapper map>
+                <map></map>
+            </wrapper>
 
-        <h2>Overnatting</h2>
+            <a name="schedule"></a>
+            <wrapper plans>
+                <table>
+                    <tr class="schedule">
+                        <td colspan="2">Fredag, 3. Juli</td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-preparty.png"/>
+                        </td>
+                        <td>
+                            <h3>Bli kjent-samling</h3>
 
-        <wrapper overnatting>
-            <p>Vi har gjort en avtale med <a href="http://www.scandichotels.no/Hotels/Norge/Alesund/Scandic-Alesund/"
-                                             target="_blank"><strong>Scandic Hotell Ålesund</strong></a> angående
-                overnatting.</p>
+                            <time datetime="2015-07-03 19:00">19:00</time>
+                            <a href="https://www.google.no/maps/place/62%C2%B028'08.0%22N+6%C2%B015'25.8%22E/@62.468883,6.257174,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0"
+                               target="_blank">Gåseidvika havn</a>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class="schedule">
+                        <td colspan="2">Lørdag, 4. Juli</td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-wedding.png"/>
+                        </td>
+                        <td>
+                            <h3>Bryllup</h3>
 
-            <table>
-                <tr>
-                    <td>Enkeltrom</td>
-                    <td><strong>750,-</strong></td>
-                    <td>ink. frokost pr. person/døgn</td>
-                </tr>
-                <tr>
-                    <td>Dobbeltrom</td>
-                    <td><strong>960,-</strong></td>
-                    <td>ink. frokost 2 personer pr. døgn</td>
-                </tr>
-            </table>
+                            <time datetime="2015-07-04 14:00">14:00</time>
+                            <a href="https://www.google.no/maps/place/borgund+church+alesund/@62.466105,6.233798,15z/data=!4m2!3m1!1s0x0:0xd553b806a27030b7?sa=X&ei=VrRDVLj8HKeCzAOox4BQ&ved=0CIgBEPwSMA0"
+                               target="_blank">Borgund kirke</a>
+                        </td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-party.png"/>
+                        </td>
+                        <td>
+                            <h3>Fest</h3>
 
-            <p>For bestilling ta kontakt og oppgi kode:<br/><span>Tlf: <a
-                    href="tel:216145190" target="_blank">216145190</a><br/>Epost: <a
-                    href="mailto:alesund@scandichotels.com" target="_blank">alesund@scandichotels.com</a></span><span>
+                            <time datetime="2015-07-04 16:00">16:00</time>
+                            <div>Seilerhytta</div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class="schedule">
+                        <td colspan="2">Søndag, 5. Juli</td>
+                    </tr>
+                    <tr class="plan">
+                        <td>
+                            <img src="img/icon-cake.png"/>
+                        </td>
+                        <td>
+                            <h3>Restekaker</h3>
+
+                            <time datetime="2015-07-05 14:00">14:00</time>
+                            <a href="https://www.google.no/maps/place/R%C3%B8rstadvegen+67,+6016+%C3%85lesund/@62.4629511,6.2883264,17z/data=!3m1!4b1!4m2!3m1!1s0x4616c53aa0460801:0xb62445c6e73aa255"
+                               target="_blank">Casa del Finsæther</a>
+                        </td>
+                    </tr>
+                </table>
+            </wrapper>
+
+            <a name="hotel"></a>
+
+            <h2>Overnatting</h2>
+
+            <wrapper overnatting>
+                <p>Vi har gjort en avtale med <a
+                        href="http://www.scandichotels.no/Hotels/Norge/Alesund/Scandic-Alesund/"
+                        target="_blank"><strong>Scandic Hotell Ålesund</strong></a> angående
+                    overnatting.</p>
+
+                <table>
+                    <tr>
+                        <td>Enkeltrom</td>
+                        <td><strong>750,-</strong></td>
+                        <td>ink. frokost pr. person/døgn</td>
+                    </tr>
+                    <tr>
+                        <td>Dobbeltrom</td>
+                        <td><strong>960,-</strong></td>
+                        <td>ink. frokost 2 personer pr. døgn</td>
+                    </tr>
+                </table>
+
+                <p>For bestilling ta kontakt og oppgi kode:<br/><span>Tlf: <a
+                        href="tel:216145190" target="_blank">216145190</a><br/>Epost: <a
+                        href="mailto:alesund@scandichotels.com"
+                        target="_blank">alesund@scandichotels.com</a></span><span>
                 <strong>MAR030715</strong> eller<br/><strong>Malin & Kristoffer bryllup</strong></span></p>
 
-            <p class="light">Prisen gjelder inntil hotellet er fullbooket evt. 4 uker før brullypet.</p>
+                <p class="light">Prisen gjelder inntil hotellet er fullbooket evt. 4 uker før brullypet.</p>
+            </wrapper>
+
+            <h2>Ønskeliste</h2>
+            <wrapper gifts>
+                <p>Dersom du har lyst til å gi en liten oppmerksomhet har vi laget en ønskeliste på Christiania
+                    Glasmagasin
+                    som heter “Malin og Kristoffer sin ønskeliste”.</p>
+
+                <p>
+                    Dersom du ønsker å gi noe annet setter vi også stor pris på små tilskudd til innredning av nytt hjem
+                    i
+                    Ålesund.
+                </p>
+            </wrapper>
+
+            <h2>Kontakt</h2>
+
+            <wrapper contact>
+                <p>Har du noen spørsmål ta gjerne kontakt på telefon eller e-post.</p>
+
+                <div>
+                    <h3>Malin</h3>
+
+                    <p>Tlf: <a href="tel:004741661881">416 61 881</a></p>
+
+                    <p>Epost: <a href="mailto:malin.finsaether@gmail.com">malin.finsaether@gmail.com</a></p>
+                </div>
+                <div>
+                    <h3>Kristoffer</h3>
+
+                    <p>Tlf: <a href="tel:004741266533">412 66 533</a></p>
+
+                    <p>Epost: <a href="mailto:kris.skarbo@gmail.com">kris.skarbo@gmail.com</a></p>
+                </div>
+            </wrapper>
         </wrapper>
 
-        <h2>Kontakt</h2>
+        <wrapper profile>
+            <img src="img/kris-og-malin.png"/>
 
-        <wrapper contact>
-            <p>Har du noen spørsmål ta gjerne kontakt på telefon eller e-post.</p>
-
-            <div>
-                <h3>Malin</h3>
-
-                <p>Tlf: <a href="tel:004741661881">416 61 881</a></p>
-
-                <p>Epost: <a href="mailto:malin.finsaether@gmail.com">malin.finsaether@gmail.com</a></p>
-            </div>
-            <div>
-                <h3>Kristoffer</h3>
-
-                <p>Tlf: <a href="tel:004741266533">412 66 533</a></p>
-
-                <p>Epost: <a href="mailto:kris.skarbo@gmail.com">kris.skarbo@gmail.com</a></p>
-            </div>
+            <h2>Vi gleder oss!</h2>
         </wrapper>
-    </wrapper>
+    </foreground>
 
-    <wrapper profile>
-        <img src="img/kris-og-malin.png"/>
-
-        <h2>Vi gleder oss!</h2>
-    </wrapper>
-</foreground>
-
-<clouds>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-    <cloud>
-        <object type="image/svg+xml" data="svg/cloud.svg"></object>
-    </cloud>
-</clouds>
+    <clouds>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+        <cloud>
+            <object type="image/svg+xml" data="svg/cloud.svg"></object>
+        </cloud>
+    </clouds>
 </app>
 
 </body>
