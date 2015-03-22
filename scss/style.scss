@@ -413,6 +413,22 @@ wrapper[info] {
         }
     }
 
+    wrapper[general] {
+        h3 {
+            font-size: 18px;
+            font-family: 'Lobster', cursive;
+            font-weight: bold;
+        }
+
+        @media screen and (min-width: $breakpoint-medium) {
+            text-align: center;
+        }
+
+        p + h3 {
+            margin-top: 20px;
+        }
+    }
+
     wrapper[contact] {
         h3 {
             font-size: 18px;
