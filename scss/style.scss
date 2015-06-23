@@ -549,7 +549,7 @@ clouds {
 
 wrapper[transport] {
     .wrap {
-        display: inline-block;
+        display: block;
         margin-bottom: 20px;
     }
 
@@ -595,18 +595,6 @@ wrapper[transport] {
 
     ul {
         margin: 10px;
-    }
-
-    @media screen and (min-width: $breakpoint-medium) {
-        text-align: center;
-
-        .wrap {
-            max-width: $breakpoint-small;
-            display: inline-block;
-            text-align: left;
-            vertical-align: top;
-            margin: auto 20px 20px;
-        }
     }
 }
 

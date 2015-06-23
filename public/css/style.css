@@ -806,7 +806,7 @@ clouds cloud:nth-child(12) {
 
 /* line 551, ../../scss/style.scss */
 wrapper[transport] .wrap {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
 }
 /* line 556, ../../scss/style.scss */
@@ -853,63 +853,49 @@ wrapper[transport] .light {
 wrapper[transport] ul {
   margin: 10px;
 }
-@media screen and (min-width: 800px) {
-  /* line 550, ../../scss/style.scss */
-  wrapper[transport] {
-    text-align: center;
-  }
-  /* line 603, ../../scss/style.scss */
-  wrapper[transport] .wrap {
-    max-width: 320px;
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-    margin: auto 20px 20px;
-  }
-}
 
-/* line 614, ../../scss/style.scss */
+/* line 602, ../../scss/style.scss */
 wrapper[overnatting] td {
   vertical-align: top;
 }
-/* line 617, ../../scss/style.scss */
+/* line 605, ../../scss/style.scss */
 wrapper[overnatting] p, wrapper[overnatting] td {
   line-height: 1.3;
 }
-/* line 620, ../../scss/style.scss */
+/* line 608, ../../scss/style.scss */
 wrapper[overnatting] td + td {
   padding-left: 8px;
 }
-/* line 623, ../../scss/style.scss */
+/* line 611, ../../scss/style.scss */
 wrapper[overnatting] table {
   margin: 10px 0;
 }
-/* line 626, ../../scss/style.scss */
+/* line 614, ../../scss/style.scss */
 wrapper[overnatting] strong {
   font-weight: bold;
 }
-/* line 629, ../../scss/style.scss */
+/* line 617, ../../scss/style.scss */
 wrapper[overnatting] p.light {
   margin-top: 5px;
   color: #999;
   font-size: 80%;
 }
-/* line 634, ../../scss/style.scss */
+/* line 622, ../../scss/style.scss */
 wrapper[overnatting] span {
   margin-top: 10px;
   display: block;
 }
 @media screen and (min-width: 800px) {
-  /* line 613, ../../scss/style.scss */
+  /* line 601, ../../scss/style.scss */
   wrapper[overnatting] {
     text-align: center;
   }
-  /* line 642, ../../scss/style.scss */
+  /* line 630, ../../scss/style.scss */
   wrapper[overnatting] span {
     display: inline-block;
     margin: 10px 30px 10px 30px;
   }
-  /* line 647, ../../scss/style.scss */
+  /* line 635, ../../scss/style.scss */
   wrapper[overnatting] table {
     margin: 10px auto;
   }
