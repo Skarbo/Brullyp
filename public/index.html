@@ -10,8 +10,8 @@
         (function ( i, s, o, g, r, a, m ) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push( arguments )
-            }, i[r].l = 1 * new Date();
+                        (i[r].q = i[r].q || []).push( arguments )
+                    }, i[r].l = 1 * new Date();
             a = s.createElement( o ),
                     m = s.getElementsByTagName( o )[0];
             a.async = 1;
@@ -31,7 +31,7 @@
                     latLngChurch = new google.maps.LatLng( 62.466105, 6.233798 ),
                     latLngPreParty = new google.maps.LatLng( 62.468883, 6.257174 ),
                     latLngParty = new google.maps.LatLng( 62.4518388, 6.2035824 ),
-                    latLngCake = new google.maps.LatLng( 62.4629511, 6.2883264 ),
+                    latLngCake = new google.maps.LatLng( 62.4750482, 6.2554470 ),
                     latLngHotel = new google.maps.LatLng( 62.473489, 6.150777 );
 
             var mapOptions = {
@@ -76,10 +76,10 @@
                     } );
 
             var infoHotel = '<div class="infowindow"><div class="title">Hotell</div><div class="subtitle">Scandic Ålesund</div><div><a href="#hotel">Info</a></div></div>',
-                    infoPreParty = '<div class="infowindow"><div class="title">Bli kjent-samling</div><div class="subtitle">Gåseidvika havn</div><div><a href="#schedule">Info</a></div></div>',
+                    infoPreParty = '<div class="infowindow"><div class="title">Bli kjent-samling</div><div class="subtitle">Gåseidvika småbåthavn</div><div><a href="#schedule">Info</a></div></div>',
                     infoWedding = '<div class="infowindow"><div class="title">Bryllup</div><div class="subtitle">Borgund kirke</div><div><a href="#schedule">Info</a></div></div>',
                     infoParty = '<div class="infowindow"><div class="title">Fest</div><div class="subtitle">Seilerhytta</div><div><a href="#schedule">Info</a></div></div>',
-                    infoAfterParty = '<div class="infowindow"><div class="title">Restekaker</div><div class="subtitle">Casa del Finsæther</div><div><a href="#schedule">Info</a></div></div>';
+                    infoAfterParty = '<div class="infowindow"><div class="title">Restekaker</div><div class="subtitle">Casa del Finsæther & Skarbø</div><div><a href="#schedule">Info</a></div></div>';
 
             var infowindowHotel = new google.maps.InfoWindow( {
                         content: infoHotel
@@ -195,8 +195,8 @@
                             <h3>Bli kjent-samling</h3>
 
                             <time datetime="2015-07-03 19:00">19:00</time>
-                            <a href="https://www.google.no/maps/place/62%C2%B028'08.0%22N+6%C2%B015'25.8%22E/@62.468883,6.257174,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0"
-                               target="_blank">Gåseidvika havn</a>
+                            <a href="https://www.google.no/maps/place/G%C3%A5seidvika+60,+6015+%C3%85lesund/@62.468728,6.2576804,17z/data=!3m1!4b1!4m2!3m1!1s0x4616dacecb033037:0x30b47f57407a0af1"
+                               target="_blank">Gåseidvika småbåthavn</a>
                         </td>
                     </tr>
                 </table>
@@ -240,11 +240,118 @@
                             <h3>Restekaker</h3>
 
                             <time datetime="2015-07-05 14:00">14:00</time>
-                            <a href="https://www.google.no/maps/place/R%C3%B8rstadvegen+67,+6016+%C3%85lesund/@62.4629511,6.2883264,17z/data=!3m1!4b1!4m2!3m1!1s0x4616c53aa0460801:0xb62445c6e73aa255"
-                               target="_blank">Casa del Finsæther</a>
+                            <a href="https://www.google.no/maps/place/Samundplassen+5C,+6009+%C3%85lesund/@62.4750482,6.2554471,17z/data=!4m2!3m1!1s0x4616dab7d8d55f51:0x9a2ed4fb379e5266"
+                               target="_blank">Casa del Finsæther & Skarbø</a>
                         </td>
                     </tr>
                 </table>
+            </wrapper>
+
+            <h2>Transport</h2>
+
+            <wrapper transport>
+                <div class="wrap">
+                    <h3>Bli kjent-samling</h3>
+
+                    <div class="info"><a
+                            href="https://www.google.no/maps/place/G%C3%A5seidvika+60,+6015+%C3%85lesund/@62.468728,6.2576804,17z/data=!3m1!4b1!4m2!3m1!1s0x4616dacecb033037:0x30b47f57407a0af1"
+                            target="_blank">Gåseidvika 60, Ålesund</a>
+                    </div>
+
+                    <p>En kan komme seg til Gåseidvika småbåthavn ved buss, taxi eller egen bil.</p>
+
+                    <h4>Bil</h4>
+
+                    <p>Dersom en velger å ta egen bil
+                        er det anledning for å parkere på venstre side før en kommer ned til båthavnen.</p>
+
+                    <h4>Buss</h4>
+
+                    <p>Dersom en tar buss går en av på busstoppet som heter <i>Gåseidsmeden (linje 113)</i>. Deretter følger
+                        du veien
+                        til
+                        sjøen. På din vei skal du få en barnehage på venstre hånd. Når du ser denne skal
+                        du
+                        gå opp en liten bakke og
+                        få “Rikets sal” på høyre hånd. Følg så veien helt i enden til båthavnen.<br/><a class="light"
+                                                                                                        href="https://www.google.no/maps/dir/G%C3%A5sesmeden/G%C3%A5seidvika+60,+6015+%C3%85lesund/@62.4673543,6.2513826,17z/data=!4m13!4m12!1m5!1m1!1s0x4616dac45207eaa7:0x6b24a7bdb621c42d!2m2!1d6.244898!2d62.467226!1m5!1m1!1s0x4616dacecb033037:0x30b47f57407a0af1!2m2!1d6.2576804!2d62.468728"
+                                                                                                        target="_blank">Estimert
+                            gåtid; 10-15 min.</a></p>
+
+                    <h4>Tilreisende</h4>
+
+                    <p>For de tilreisende gjestene som har anledning til å delta; Dere vil bli hentet utenfor <strong><a
+                            href="https://www.google.no/maps/place/Quality+Hotel+Waterfront,+%C3%85lesund/@62.470053,6.146362,17z/data=!3m1!4b1!4m2!3m1!1s0x4616da3997ed2983:0x3d239cc374f00051"
+                            target="_blank">Waterfront
+                        hotel</a></strong> kl 18.45.</p>
+                </div>
+                <div class="wrap">
+                    <h3>Bryllup</h3>
+
+                    <div class="info"><a
+                            href="https://www.google.no/maps/place/Borgund+Kirke/@62.466105,6.233798,17z/data=!3m1!4b1!4m2!3m1!1s0x4616dac2b8446493:0xd553b806a27030b7"
+                            target="_blank">Borgund Kirke, Borgundgavlen 52</a>
+                    </div>
+                    <p>
+                        En kan komme seg til Borgund kirke ved buss, taxi eller egen bil.</p>
+
+                    <h4>Bil</h4>
+
+                    <p>Dersom en velger å ta egen bil er det anledning for å parkere utenfor kirken eller i
+                        Borgundgavlen.
+                    </p>
+
+                    <h4>Buss</h4>
+
+                    <p>Dersom en tar buss går en av på busstoppet som heter <i>Sunnmøre museum (linje 113)</i> og følger veien
+                        til
+                        kirken.<br/><a class="light"
+                                       href="https://www.google.no/maps/dir/62.4663363,6.2484075/Borgund+Kirke,+Borgundgavlen+52,+6009+Borgund,+Norge/@62.4661159,6.237748,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4616dac2b8446493:0xd553b806a27030b7!2m2!1d6.233798!2d62.466105"
+                                       target="_blank">Estimert gåtid; 10
+                            min.</a></p>
+                    <br/>
+
+                    <p>Etter vielsen går vi samlet til Sunnmøre museum hvor en båt tar oss videre til Seilerhytta.</p>
+                </div>
+                <div class="wrap">
+                    <h3>Hjemreise fra Seilerhytta</h3>
+
+                    <p>Fra Seilerhytta vil samme båt ha disse to avgangene:</p>
+                    <ul>
+                        <li><strong>kl 01.30</strong> - til <a
+                                href="https://www.google.no/maps/place/N%C3%B8rvevika,+6008+%C3%85lesund/@62.4694796,6.2125241,17z/data=!4m2!3m1!1s0x4616daee1d3d9ab7:0x293d838bca11090c"
+                                target="_blank">Nørvevika</a></li>
+                        <li><strong>kl 03.00</strong> - til <a
+                                href="https://www.google.no/maps/place/Keiser+Wilhelms+gate+6,+6003+%C3%85lesund/@62.4702488,6.1532648,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x4616daee1d3d9ab7:0x293d838bca11090c!2zTsO4cnZldmlrYSwgNjAwOCDDhWxlc3VuZA!3b1!3m1!1s0x4616da387eaf42ed:0x2c48cc1b2dbcb7a7"
+                                target="_blank">Sentrum</a></li>
+                    </ul>
+
+                    <p class="light">NB! Båten går ikke tilbake til kirken.</p>
+                </div>
+                <div class="wrap">
+                    <h3>Restekaker</h3>
+
+                    <div class="info"><a
+                            href="https://www.google.no/maps/place/Samundplassen+5C,+6009+%C3%85lesund/@62.4750482,6.2554471,17z/data=!4m2!3m1!1s0x4616dab7d8d55f51:0x9a2ed4fb379e5266"
+                            target="_blank">Samundplassen 5C, Ålesund</a>
+                    </div>
+                    <p>De som har lyst til å ta seg en tur til vårt nye hjem for restekaker er hjertlig velkommen til
+                        dette når det passer. En kan komme seg dit ved buss, taxi eller egen bil.</p>
+
+                    <h4>Buss</h4>
+
+                    <p>Dersom du velger å ta buss kan du ta alle busser som går til Nørvebroa. Gå av på busstoppet som
+                        heter <i>Nørvasund (linje 113)</i>. Deretter går
+                        du mot sparbutikken som du skal få på venstre hånd når du går oppover en seig bakke.</p>
+
+                    <p>Ta så av
+                        til venstre når du kommer til gata <i>Larsgårdsringen</i>. Derifra tar du av på første avgang til høyre
+                        og så er det
+                        rett frem til du kommer til et lite hvitt hus (merket med 5C) med rødt tak som ligger bak en
+                        stor hekk.<br/><a class="light"
+                                            href="https://www.google.no/maps/dir/H%C3%B8gskolen+i+%C3%85lesund/Samundplassen+5C,+6009+%C3%85lesund/@62.4716583,6.2410887,16z/data=!4m14!4m13!1m5!1m1!1s0x4616dac1b924b1e9:0xf649fcf09ca4ac91!2m2!1d6.23487!2d62.4718!1m5!1m1!1s0x4616dab7d8d55f51:0x9a2ed4fb379e5266!2m2!1d6.2554471!2d62.4750482!3e2"
+                                            target="_blank">Estimert gåtid; 18 min.</a></p>
+                </div>
             </wrapper>
 
             <a name="hotel"></a>
